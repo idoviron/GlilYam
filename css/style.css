@@ -11,7 +11,6 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 100vh
 	z-index: 1;
 }
 #background_image{
@@ -24,12 +23,12 @@ body {
 #button{
 	z-index: 5;
 	position: absolute;
-	top: 50vh;
-	left: 50vw;
+	margin-top: 10%;
+	margin-left: 10%;
 }
 
 @media only screen and (orientation:portrait){
-  #container {  
+	#container {  
     height: 100vw;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -37,13 +36,28 @@ body {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
   }
+  #splash_video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index: 1;
+	}
 }
 @media only screen and (orientation:landscape){
-  #container {  
+	#container {  
      -webkit-transform: rotate(0deg);
      -moz-transform: rotate(0deg);
      -o-transform: rotate(0deg);
      -ms-transform: rotate(0deg);
      transform: rotate(0deg);
-  }
+	}
+    #splash_video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	z-index: 1;
+	}
 }
